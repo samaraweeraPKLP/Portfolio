@@ -3,61 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lakshan Pradeep</title>
+    <title>Lakshan Pradeep - Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Added Boxicons CDN -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Lakshan Pradeep</h1>
-            <p>Undergraduate Software Engineer | Backend Developer</p>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Portfolio.</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-text">
+            <h1>Hello, It's Me</h1>
+            <h2>Lakshan Pradeep</h2>
+            <p>
+                <div class="animated-text">
+                    <div>And I'm a
+                    <span>Software Engineer and UI/UX Designer</span></div>
+                </div>
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ab autem repellat reiciendis ipsam perspiciatis.</p>
+            <div class="social-icons">
+                <a href="#"><i class='bx bxl-facebook'></i></a> <!-- Facebook -->
+                <a href="#"><i class='bx bxl-twitter'></i></a> <!-- Twitter -->
+                <a href="#"><i class='bx bxl-linkedin'></i></a> <!-- LinkedIn -->
+                <a href="#"><i class='bx bxl-instagram'></i></a> <!-- Instagram -->
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        <div class="hero-image">
+            <img src="Lakshan1.png" alt="Lakshan">
         </div>
     </header>
 
-    <section id="about" class="container">
-        <h2>About Me</h2>
-        <p>Hello! I am an undergraduate Software Engineer with a passion for backend development and solving real-world problems. Currently pursuing my degree, I am constantly learning and working on new projects, like the Smart Inventory Management System.</p>
-    </section>
-
-    <section id="projects" class="container">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Smart Inventory Management System</h3>
-            <p>A project designed to help small businesses manage inventory efficiently. Features include stock tracking, order management, and report generation.</p>
-            <a href="#">View on GitHub</a>
-        </div>
-        <div class="project">
-            <h3>Vehicle Maintenance Tracker</h3>
-            <p>An app that helps track vehicle maintenance records, service history, and parts replacements.</p>
-            <a href="#">View on GitHub</a>
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>Hello! I am an undergraduate Software Engineer with a passion for backend development and solving real-world problems. Currently pursuing my degree, I am constantly learning and working on new projects, like the Smart Inventory Management System.</p>
         </div>
     </section>
 
-    <section id="skills" class="container">
-        <h2>Skills</h2>
-        <ul>
-            <li>Languages: JavaScript, Python, C#</li>
-            <li>Frameworks: React, Node.js, ASP.NET Core</li>
-            <li>Databases: MySQL, MongoDB</li>
-            <li>Version Control: Git, GitHub</li>
-        </ul>
-    </section>
-
-    <section id="contact" class="container">
-        <h2>Contact</h2>
-        <p>Feel free to reach out to me on <a href="mailto:your-email@example.com">your-email@example.com</a> or connect with me on <a href="https://linkedin.com">LinkedIn</a>.</p>
-    </section>
-
-    <footer class="container">
-        <p>&copy; 2024 Your Name | All Rights Reserved</p>
-    </footer>
 </body>
 </html>

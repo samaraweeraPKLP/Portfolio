@@ -1,0 +1,208 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1c27;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #1c1c27;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    color: #ccc;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.nav-links li a:hover {
+    color: #00d8ff;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px;
+    height: 100vh;
+    background-color: #1c1c27;
+}
+
+.hero-text {
+    max-width: 550px;
+    margin-bottom: 5%;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 300;
+}
+
+.hero-text h2 {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.hero-text p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* Animation for "I'm a Software Engineer..." */
+.animated-text {
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.animated-text div:first-of-type {
+  animation: showup 7s infinite;
+}
+
+.animated-text div:last-of-type {
+  width: 0px;
+  animation: reveal 7s infinite;
+}
+
+.animated-text div:last-of-type span {
+  margin-left: -355px;
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+  0% {opacity: 0;}
+  20% {opacity: 1;}
+  80% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@keyframes slidein {
+  0% { margin-left: -800px; }
+  20% { margin-left: -800px; }
+  35% { margin-left: 0px; }
+  100% { margin-left: 0px; }
+}
+
+@keyframes reveal {
+  0% {opacity: 0; width: 0px;}
+  20% {opacity: 1; width: 0px;}
+  30% {width: 355px;}
+  80% {opacity: 1;}
+  100% {opacity: 0; width: 355px;}
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* Button */
+.btn {
+    margin-top: 40px; /* Adds space between social icons and the button */
+    padding: 12px 24px;
+    background-color: #00d8ff;
+    color: #000;
+    border-radius: 30px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    width: 40%;
+}
+
+.btn:hover {
+    background-color: #b5cbd0;
+}
+
+/* Hero Image */
+.hero-image {
+    width: 450px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
+
+.hero-image img {
+    border-radius: 50px;
+}
+
+.social-icons i {
+    font-size: 24px; /* Change size as needed */
+    color: #ccc; /* Default icon color */
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover i {
+    color: #00d8ff; /* Change color on hover */
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Match height with the hero section */
+    padding: 100px 50px;
+    background-color: #1c1c27;
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: center;
+}
+
+.about-text h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 18px;
+    color: #ccc;
+}
